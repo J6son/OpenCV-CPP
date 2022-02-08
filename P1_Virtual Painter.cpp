@@ -20,7 +20,7 @@
 //							 {0,255,0}//green
 //};
 //
-//////膨胀图上提取边缘 在原图上画出边缘
+//////膨胀图上提取边缘 在原图上画出边缘 返回笔头位置的点
 //Point getContours(Mat imgDilate)
 //{
 //    vector<vector<Point>> contours; //轮廓信息 边缘点
@@ -46,7 +46,7 @@
 //            //计算封闭轮廓的周长或曲线的长度 true表示曲线闭合
 //            float peri = arcLength(contours[i], true);
 //            
-//            //把一个连续光滑曲线折线化
+//            //把一个连续光滑曲线折线化 减少端点数 存到conPoly中
 //            //第三个参数 原始曲线与近似曲线之间的最大距离
 //            //距离大于此阈值则舍弃，小于则保留，epsilon越小，折线的形状越“接近”曲线
 //            approxPolyDP(contours[i], conPoly[i], 0.02 * peri, true);
@@ -56,7 +56,7 @@
 //
 //            //返回包覆输入信息的最小正矩形
 //            boundRect[i] = boundingRect(conPoly[i]);
-//            //取到矩形最上面的边的中间位置
+//            //取到矩形最上面的边的中间位置 当作笔头
 //            myPoint.x = boundRect[i].x + boundRect[i].width / 2;
 //            myPoint.y = boundRect[i].y;
 //

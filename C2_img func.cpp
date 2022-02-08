@@ -17,7 +17,7 @@
 //    cvtColor(img, imgGray, COLOR_BGR2GRAY);
 //
 //    //图像平滑降噪 中值、均值、高斯滤波
-//    //输入图像 输出图像 滤波核 x方向标准差 y方向标准差
+//    //输入图像 输出图像 滤波核 x方向标准差 y方向标准差 y是0则和x一样
 //    GaussianBlur(imgGray, imgBlur, Size(3, 3), 3, 0);
 //
 //    //边缘检测 canny算子

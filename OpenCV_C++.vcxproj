@@ -152,6 +152,7 @@
     <ClCompile Include="C7_Contour detection.cpp" />
     <ClCompile Include="C8_Face detection.cpp" />
     <ClCompile Include="P1_Virtual Painter.cpp" />
+    <ClCompile Include="P2_Document Scanner.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
